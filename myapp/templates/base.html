@@ -1,0 +1,53 @@
+{% load static %}
+<!--Footer content-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>EEG SIGNALS TO IMAGE</title>
+    <meta name="description" content="A brief description" />
+    <meta
+      name="author"
+      content="Our pbl project"
+    />
+
+    <!-- Load favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="{% static 'img/favicon.ico' %}"
+    />
+    <!-- Include your CSS files here -->
+    <link
+      rel="preload"
+      as="style"
+      href="{% static 'css/stylee.css' %}"
+      onload="this.rel = 'stylesheet'"
+    />
+
+    <link
+    rel="preload"
+    as="style"
+    href="{% static 'css/sut.css' %}"
+    onload="this.rel = 'stylesheet'"
+  />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    {% include 'partials/_footer.html' %}
+    <main>{% block content %} {% endblock %}</main>
+    <script src="{% static 'js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'js/stylee.js' %}"></script>
+
+  </body>
+</html>

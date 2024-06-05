@@ -1,0 +1,11 @@
+.centt img{
+    display: block;
+    margin: auto;
+}
+
+
+.result{
+    font-size: 35px;
+    color: #3E8EDE;
+    text-align: center;
+}

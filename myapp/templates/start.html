@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <br><br><br><br><br>
+  <div class="back">
+    <div class="back_1">
+      <br><br>
+        <form action="" method="POST" enctype="multipart/form-data" id="myForm">
+          {% csrf_token %}
+          {{form.as_p}}
+          <input type="submit" id="button" value="UPLOAD" class="submit" onclick="clear();">
+        </form>
+    </div>
+    <div class="back_2">
+      <img src="{% static 'img/transparent.png' %}" width="550px" height="420px">
+    </div>
+  </div>
+
+
+{% endblock %}

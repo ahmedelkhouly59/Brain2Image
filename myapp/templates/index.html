@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <br><br><br><br><br>
+    <div class="title">
+        <div class="title_1">
+            <h2 class='margin_0'>EEG SIGNALS</h2>
+            <h2 class="margin_1">TO IMAGE</h2>
+        </div>
+        <div class="title_2">
+            <img src="{% static 'img/brain2_.png' %}" width="550px" height="420px">
+        </div>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="half">
+        <div class="vid">
+            <video class="video1" width="240" height="370" controls>
+                <source src="{% static 'img/pbl_video.mp4' %}" type="video/mp4" >
+              Your browser does not support the video tag.
+              </video>
+        </div>
+        <div class="summary">        
+            <h5 class="marg_bot">The EEG (Electroencephalography) Signals to Images project </h5> is an innovative initiative aimed at converting raw brainwave <br>data into visual representations. <br>
+            EEG is a non-invasive method to record electrical activity of the brain using sensors placed on this project harnesses advanced signal processing and machine learning techniques to transform these EEG signals into meaningful images.
+        </div>
+
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="button">
+        <button class="start">
+            <a href="{% url 'start' %}" class="start1">GET STARTED</a>
+        </button>
+    </div>
+    <br><br><br><br>
+    
+{% endblock %}
