@@ -33,7 +33,4 @@ We implemented the original Brain2Image approach which involves:
 - Upload EEG files and generate images via browser interface
 - Simple and responsive UI for ease of use
 
----
-
-## 🖥️ Project Structure
 
